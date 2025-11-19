@@ -14,6 +14,7 @@ Herramientas para convertir instalaciones de software en paquetes portables tota
 - Python 3.10+ (los scripts usan solo biblioteca estándar).
 - Git con [Git LFS](https://git-lfs.github.com/) inicializado (`git lfs install`).
 - Herramienta de trazado (Uninstall Tool, Geek Uninstaller, etc.) para generar el XML de entrada.
+- (Opcional) [Qt for Python / PySide6](https://doc.qt.io/qtforpython/) para usar la interfaz gráfica (`pip install -r requirements.txt`).
 
 ### Estructura del repositorio
 ```
@@ -60,6 +61,18 @@ Para inspeccionar el contenido sin descargar los binarios completos, usa `git lf
 
 ### Demo sintético
 `demo_source/`, `demo_config.json` y `demo_portable/` sirven como ejemplo autocontenido con archivos muy pequeños. Puedes repetir el flujo (`python portable_packager.py demo_config.json --output demo_portable --dry-run`) para comprobar que tu entorno y permisos funcionan correctamente.
+
+### Interfaz gráfica moderna (Qt for Python + QML)
+Si prefieres evitar la terminal, el repositorio incluye una GUI construida con PySide6 + QML:
+
+1. Instala dependencias: `pip install -r requirements.txt`.
+2. Ejecuta `python gui_app/main.py`.
+3. Usa las dos pestañas disponibles:
+   - **Convertir XML**: selecciona el archivo exportado desde Uninstall Tool, define dónde guardar el JSON y pulsa “Convertir XML”.
+   - **Generar paquete portable**: apunta al JSON, define la carpeta destino y ejecuta el empaquetado (con opción *dry-run*).
+4. El panel inferior muestra el log en tiempo real; puedes abrir el JSON o la carpeta de salida con un clic.
+
+La GUI utiliza los mismos módulos (`trace_xml_to_config` y `portable_packager`) por lo que cualquier mejora en los scripts se refleja automáticamente.
 
 ### Consejos y buenas prácticas
 - Ejecuta los scripts en una consola con permisos acordes (especialmente para exportar claves de registro o consultar servicios).
