@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TracedData>
+    <Files>
+        <File Path="C:\Program Files\ExampleApp\Example.exe" />
+        <File Path="C:\ProgramData\ExampleApp\data.db" />
+        <File Path="C:\Users\User\AppData\Roaming\ExampleApp\config.json" />
+        <File Path="C:\Windows\System32\example.dll" />
+    </Files>
+    <Registry>
+        <Key Name="HKLM\SOFTWARE\ExampleVendor\ExampleApp" />
+        <Key Name="HKCU\Software\ExampleVendor\ExampleApp" />
+    </Registry>
+    <Services>
+        <Service Name="ExampleAppService" />
+    </Services>
+    <Tasks>
+        <Task Name="\ExampleVendor\ExampleAppUpdater" />
+    </Tasks>
+</TracedData>

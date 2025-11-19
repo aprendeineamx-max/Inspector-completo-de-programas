@@ -1,0 +1,31 @@
+{
+  "app_name": "ExampleApp",
+  "directories": [
+    {
+      "path": "C:\\\\Program Files\\\\ExampleApp",
+      "target": "ExampleApp",
+      "type": "program"
+    },
+    {
+      "path": "%ProgramData%\\\\ExampleApp",
+      "target": "ExampleApp",
+      "type": "data"
+    }
+  ],
+  "files": [
+    "%AppData%\\\\ExampleApp\\\\settings.json"
+  ],
+  "registry_keys": [
+    "HKLM\\\\SOFTWARE\\\\ExampleVendor\\\\ExampleApp",
+    "HKCU\\\\Software\\\\ExampleVendor\\\\ExampleApp"
+  ],
+  "services": [
+    "ExampleAppService"
+  ],
+  "scheduled_tasks": [
+    "\\\\ExampleVendor\\\\ExampleAppUpdater"
+  ],
+  "shortcuts": [
+    "%ProgramData%\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\ExampleApp\\\\ExampleApp.lnk"
+  ]
+}

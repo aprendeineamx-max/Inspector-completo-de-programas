@@ -1,0 +1,2 @@
+protonpass_portable/ProgramData/AppData/Local/ProtonPass/app-1.32.11/ProtonPass.exe filter=lfs diff=lfs merge=lfs -text
+protonpass_portable/ProgramData/AppData/Local/ProtonPass/packages/ProtonPass-1.32.11-full.nupkg filter=lfs diff=lfs merge=lfs -text

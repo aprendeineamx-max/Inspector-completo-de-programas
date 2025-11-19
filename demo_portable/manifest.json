@@ -1,0 +1,28 @@
+{
+  "generated_at": "2025-11-19T10:05:31.592461Z",
+  "payload": {
+    "app_name": "DemoApp",
+    "directories": [
+      {
+        "path": "c:\\Users\\Administrator\\Desktop\\Inspector completo de programas\\demo_source\\ProgramFiles\\DemoApp",
+        "target": "DemoApp",
+        "type": "program"
+      },
+      {
+        "path": "c:\\Users\\Administrator\\Desktop\\Inspector completo de programas\\demo_source\\ProgramData\\DemoApp",
+        "target": "DemoApp",
+        "type": "data"
+      },
+      {
+        "path": "c:\\Users\\Administrator\\Desktop\\Inspector completo de programas\\demo_source\\AppData\\Roaming\\DemoApp",
+        "target": "AppData\\Roaming\\DemoApp",
+        "type": "data"
+      }
+    ],
+    "files": [],
+    "registry_keys": [],
+    "services": [],
+    "scheduled_tasks": [],
+    "shortcuts": []
+  }
+}
